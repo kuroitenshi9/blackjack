@@ -1,4 +1,3 @@
-# Tworzenie kombinacji obiektów
 class Card:
   """ Karta do gry. """
   RANKS = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
@@ -36,20 +35,20 @@ class Hand:
       self.cards.remove(card)
       other_hand.add(card)
 
-
-    # część główna
-
 card1 = Card(rank='A', suit='c')
+
+print('Wyświetlam obiekt karty (klasy Card):')
+print(card1)
 card2 = Card(rank='2', suit='c')
 card3 = Card(rank='3', suit='c')
 card4 = Card(rank='4', suit='c')
 card5 = Card(rank='5', suit='c')
 
-# print('\nWyświetlam resztę obiektów po jednym na raz:')
-# print(card2)
-# print(card3)
-# print(card4)
-# print(card5)
+print('\nWyświetlam resztę obiektów po jednym na raz:')
+print(card2)
+print(card3)
+print(card4)
+print(card5)
 
 my_hand = Hand()
 print('\nWyświetlam zawartość mojej ręki przed dodaniem jakichkolwiek kart:')
@@ -77,3 +76,5 @@ my_hand.clear()
 print("\nMoja ręka po usunięciu z niej kart:")
 print(my_hand)
 input("\n\nAby zakończyć program, naciśnij klawisz Enter.")
+
+
